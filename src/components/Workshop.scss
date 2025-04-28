@@ -1,0 +1,135 @@
+$primary-color: #3498db;
+$accent-color: #f39c12;
+$background-color: #f7f9fc;
+$light-text: #2c3e50;
+$hover-bg-color: rgba(52, 152, 219, 0.1);
+
+.workshop-page {
+  width: 80%;
+  margin: 40px auto;
+  color: $light-text;
+  text-align: center;
+
+  .workshop-header {
+    margin-bottom: 40px;
+    div {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: $primary-color;
+      animation: fadeIn 1s ease-in-out;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+  }
+
+  .workshop-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+
+    .workshop-item {
+      padding: 20px;
+      background-color: $background-color;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: left;
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      div {
+        font-size: 1.8rem;
+        color: $primary-color;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        padding: 0;
+        margin: 0;
+      }
+
+      &.fade-in-left {
+        animation: fadeInLeft 1s ease-in-out;
+      }
+      &.fade-in-right {
+        animation: fadeInRight 1s ease-in-out;
+      }
+    }
+  }
+
+  .workshop-footer {
+    background-color: $primary-color;
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      animation: fadeIn 1.8s ease-in-out;
+    }
+
+    .register-btn {
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      background-color: $accent-color;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($accent-color, 10%);
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

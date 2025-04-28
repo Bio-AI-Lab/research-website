@@ -1,0 +1,532 @@
+// .professor-details-page {
+//   padding: 40px;
+//   .back-button {
+//     background-color: #1e88e5;
+//     color: white;
+//     border: none;
+//     padding: 10px 20px;
+//     border-radius: 6px;
+//     cursor: pointer;
+//     &:hover {
+//       background-color: #1565c0;
+//     }
+//   }
+//   .professor-details {
+//     display: flex;
+//     align-items: center;
+//     margin-bottom: 30px;
+//     .professor-image {
+//       width: 150px;
+//       height: 150px;
+//       border-radius: 50%;
+//       margin-right: 20px;
+//     }
+//     .professor-info {
+//       h1 {
+//         font-size: 28px;
+//         color: #1e88e5;
+//       }
+//       p {
+//         font-size: 18px;
+//         color: #666;
+//       }
+//     }
+//   }
+//   .student-list {
+//     list-style: none;
+//     padding: 0;
+//     .student-item {
+//       background-color: #f1f1f1;
+//       padding: 15px;
+//       border-radius: 8px;
+//       margin-bottom: 10px;
+//       h3 {
+//         margin: 0;
+//         font-size: 20px;
+//       }
+//       p {
+//         margin: 5px 0 0;
+//         color: #555;
+//       }
+//     }
+//   }
+// }
+
+// $primary-color: #2c3e50;
+// $secondary-color: #ecf0f1;
+// $accent-color: #3498db;
+// $highlight-color: #f39c12;
+// $light-background: #f7f9fc;
+
+// .professorsDetailsPage-main {
+//   width: 80%;
+//   margin: 40px auto;
+//   font-family: "Roboto", sans-serif;
+
+//   &__title {
+//     font-size: 36px;
+//     font-weight: 700;
+//     // text-align: center;
+//     color: $primary-color;
+//     margin-bottom: 30px;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//   }
+
+//   /* PI Section */
+//   &__pi {
+//     margin-bottom: 40px;
+//     padding: 2rem;
+//     // padding: 2rem 2rem 3.5rem 2rem;
+//     background: linear-gradient(135deg, $accent-color, $highlight-color);
+//     border-radius: 15px;
+//     box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 24px;
+//     display: flex;
+//     align-items: center;
+//     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+//     cursor: pointer;
+
+//     &__content {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//     }
+//     &:hover {
+//       transform: translateY(-5px);
+//       box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 32px;
+//     }
+
+//     &__imageContainer {
+//       width: 250px;
+//       height: 250px;
+//       margin-right: 2rem;
+
+//       &__image {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//         border-radius: 50%;
+//         border: 5px solid $secondary-color;
+//         box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+//       }
+//     }
+
+//     &__textContainer {
+//       flex: 1;
+//       color: $secondary-color;
+
+//       &__nameAndDesignationContainer {
+//         display: flex;
+//         flex-direction: column;
+//         margin-bottom: 1rem;
+
+//         &__name {
+//           font-size: 2rem;
+//           font-weight: 600;
+//           color: $secondary-color;
+//         }
+
+//         &__designation {
+//           margin-right: 0.5rem;
+//           // padding: 0.5rem 1.5rem;
+//           // background-color: rgba($secondary-color, 0.2);
+//           color: $secondary-color;
+//           border-radius: 50px;
+//           font-size: 1rem;
+//           text-align: center;
+//           width: fit-content;
+//           font-weight: 600;
+//           color: #2c3e50;
+//         }
+
+//         &__publications {
+//           // margin-top: 0.5rem;
+//           padding: 0.5rem 1.5rem;
+//           background-color: rgba($secondary-color, 0.2);
+//           color: $secondary-color;
+//           border-radius: 50px;
+//           font-size: 1rem;
+//           text-align: center;
+//           width: fit-content;
+//           transition: all 0.4s ease-in-out;
+//           &:hover {
+//             background-color: #fff;
+//             color: #2c3e50;
+//             // font-weight: bold;
+//           }
+//         }
+//       }
+
+//       &__commonText {
+//         font-size: 1.2rem;
+//         margin-bottom: 0.5rem;
+//       }
+
+//       &__description {
+//         font-size: 1rem;
+//         line-height: 1.6;
+
+//         &__label {
+//           font-weight: bold;
+//           color: $highlight-color;
+//         }
+//       }
+//     }
+//   }
+
+//   /* Members Section */
+//   &__card {
+//     margin: 1.5rem 0;
+//     padding: 1.5rem;
+//     border-radius: 12px;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+//     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+//     background-color: $light-background;
+//     position: relative;
+
+//     &.light {
+//       background-color: $light-background;
+//     }
+
+//     &.dark {
+//       background-color: $secondary-color;
+//     }
+
+//     &:hover {
+//       transform: translateY(-5px);
+//       box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 24px;
+//     }
+
+//     &__imageContainer {
+//       height: 120px;
+//       width: 120px;
+//       margin-right: 1.5rem;
+
+//       &__image {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//         border-radius: 50%;
+//         border: 3px solid $accent-color;
+//       }
+//     }
+
+//     &__textContainer {
+//       flex: 1;
+
+//       &__nameAndQualificationContainer {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         margin-bottom: 0.5rem;
+
+//         &__name {
+//           font-size: 1.4rem;
+//           font-weight: 600;
+//           color: $primary-color;
+//         }
+
+//         &__qualification {
+//           padding: 0.3rem 1rem;
+//           background-color: $accent-color;
+//           color: #fff;
+//           font-size: 0.9rem;
+//           box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+//           position: absolute;
+//           top: 0;
+//           right: 0;
+//           border-bottom-left-radius: 10px;
+//           border-top-right-radius: 10px;
+//         }
+//       }
+
+//       &__description {
+//         font-size: 1rem;
+//         color: $primary-color;
+//         line-height: 1.5;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 768px) {
+//   .members-main {
+//     width: 90%;
+
+//     &__title {
+//       font-size: 28px;
+//     }
+
+//     /* PI Section */
+//     &__pi {
+//       flex-direction: column;
+//       text-align: center;
+//       &__content {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         flex-direction: column;
+//       }
+//       &__imageContainer {
+//         margin-right: 0;
+//         margin-bottom: 1.5rem;
+
+//         // &__image {
+//         //   width: 150px;
+//         //   height: 150px;
+//         // }
+//       }
+
+//       &__textContainer {
+//         &__nameAndDesignationContainer {
+//           align-items: center;
+
+//           &__name {
+//             font-size: 1.8rem;
+//           }
+
+//           &__designation {
+//             margin-top: 0.5rem;
+//             padding: 0.4rem 1.2rem;
+//           }
+//         }
+
+//         &__commonText {
+//           font-size: 1.1rem;
+//         }
+
+//         &__description {
+//           font-size: 1rem;
+//         }
+//       }
+//     }
+
+//     /* Members Section */
+//     &__card {
+//       flex-direction: column;
+//       align-items: center;
+//       text-align: center;
+
+//       &__imageContainer {
+//         margin-right: 0;
+//         margin-bottom: 1.5rem;
+
+//         &__image {
+//           width: 100px;
+//           height: 100px;
+//         }
+//       }
+
+//       &__textContainer {
+//         &__nameAndQualificationContainer {
+//           flex-direction: column;
+//           align-items: center;
+
+//           &__name {
+//             margin-bottom: 10px;
+//           }
+
+//           &__qualification {
+//             margin: 5px 0;
+//           }
+//         }
+
+//         &__description {
+//           margin-top: 10px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+$primary-color: #2c3e50;
+$secondary-color: #ecf0f1;
+$accent-color: #3498db;
+$highlight-color: #f39c12;
+$light-background: #f7f9fc;
+
+.professorsDetailsPage-main {
+  width: 80%;
+  margin: 40px auto;
+  font-family: "Roboto", sans-serif;
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $primary-color;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* PI Section */
+  &__pi {
+    margin-bottom: 40px;
+    padding: 2rem;
+    background: linear-gradient(135deg, $accent-color, $highlight-color);
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    &__imageContainer {
+      width: 250px;
+      height: 250px;
+      margin-right: 2rem;
+
+      &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid $secondary-color;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    &__textContainer {
+      flex: 1;
+      color: $secondary-color;
+
+      &__nameAndDesignationContainer {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+        &__name {
+          font-size: 2rem;
+          font-weight: 600;
+        }
+
+        &__designation {
+          color: #2c3e50;
+          font-size: 1rem;
+          text-align: center;
+          font-weight: 600;
+        }
+      }
+
+      &__commonText {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      &__description {
+        font-size: 1rem;
+        line-height: 1.6;
+
+        &__label {
+          font-weight: bold;
+          color: $highlight-color;
+        }
+      }
+    }
+  }
+
+  /* Members Section */
+  &__card {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: $light-background;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    &__imageContainer {
+      height: 120px;
+      width: 120px;
+      margin-right: 1.5rem;
+
+      &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid $accent-color;
+      }
+    }
+
+    &__textContainer {
+      flex: 1;
+
+      &__nameAndQualificationContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+
+        &__name {
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: $primary-color;
+        }
+
+        &__qualification {
+          // padding: 0.3rem 1rem;
+          // background-color: $accent-color;
+          // color: #fff;
+          // font-size: 0.9rem;
+          // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+          // border-radius: 8px;
+          padding: 0.3rem 1rem;
+          background-color: $accent-color;
+          color: #fff;
+          font-size: 0.9rem;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          border-bottom-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+      }
+
+      &__description {
+        font-size: 1rem;
+        color: $primary-color;
+        line-height: 1.5;
+      }
+    }
+
+    // .view-publications-btn {
+    //   margin-top: 0.5rem;
+    //   background-color: $accent-color;
+    //   color: #fff;
+    //   font-size: 0.7rem;
+    //   &:hover {
+    //     background-color: darken($accent-color, 10%);
+    //   }
+    // }
+  }
+  .view-publications-btn {
+    margin-top: 0.5rem;
+    background-color: $accent-color;
+    color: #fff;
+    font-size: 0.7rem;
+    &:hover {
+      background-color: darken($accent-color, 10%);
+    }
+  }
+}

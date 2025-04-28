@@ -1,0 +1,233 @@
+$primary-color: #3498db;
+$secondary-color: #ecf0f1;
+$text-color: #333;
+$background-color: #f7f9fc;
+
+.workshop-agenda-page2 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+
+  .agenda-header {
+    text-align: center;
+    margin-bottom: 30px;
+
+    h4 {
+      color: $primary-color;
+    }
+    .agenda-location,
+    .agenda-date {
+      color: $text-color;
+    }
+  }
+
+  .agenda-list {
+    .agenda-item {
+      background-color: $secondary-color;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.5s forwards ease-in-out;
+
+      .agenda-time {
+        color: $primary-color;
+        font-weight: bold;
+      }
+
+      .agenda-topic {
+        margin-top: 10px;
+        font-weight: 600;
+        color: darken($primary-color, 10%);
+      }
+
+      .session-list,
+      .project-list {
+        margin-top: 15px;
+      }
+
+      .session-item,
+      .project-item {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateX(-20px);
+        animation: fadeInRight 0.5s forwards ease-in-out;
+
+        .session-time,
+        .session-program {
+          color: $primary-color;
+          font-weight: bold;
+        }
+
+        .session-speaker,
+        .session-title,
+        .session-moderator,
+        .project-item {
+          color: $text-color;
+        }
+      }
+    }
+  }
+
+  .floating-register-button {
+    // position: fixed;
+    // bottom: 20px;
+    // right: 20px;
+    margin-top: 0.8rem;
+    background-color: $primary-color;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 6px 70px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    animation: shake 0.5s ease infinite; // Adjust animation duration and timing as needed
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+      transform: scale(1.05);
+    }
+  }
+  .custom-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .custom-modal {
+    background: $background-color;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease-out forwards;
+
+    .registration-form-container {
+      color: $text-color;
+    }
+
+    .form-field {
+      margin-bottom: 15px;
+
+      .MuiInputBase-root {
+        background-color: white;
+        border-radius: 8px;
+      }
+
+      .MuiOutlinedInput-notchedOutline {
+        border-color: $primary-color;
+      }
+
+      .Mui-focused .MuiOutlinedInput-notchedOutline {
+        border-color: darken($primary-color, 10%);
+      }
+    }
+
+    .submit-button {
+      background-color: $primary-color;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+
+  // }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-1.5px);
+  }
+  40%,
+  80% {
+    transform: translateX(1.5px);
+  }
+}
+
+.highlights-section {
+  margin-top: 30px;
+  text-align: center;
+
+  .highlights-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .highlight-item {
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .highlight-image {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+  }
+}

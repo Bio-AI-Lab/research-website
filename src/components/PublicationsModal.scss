@@ -1,0 +1,329 @@
+// .publications-modal {
+//   .close-btn {
+//     position: absolute;
+//     right: 1rem;
+//     top: 1rem;
+//   }
+//   .modal-box {
+//     max-height: 90vh; // Ensures the modal doesn't exceed viewport height
+//     overflow-y: auto; // Enables vertical scrolling for long content
+//     padding: 0;
+//   }
+
+//   #modal-title {
+//     padding: 1rem;
+//     box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+//   }
+
+//   .publications-list {
+//     max-height: 75vh; // Limits the height of the scrollable area
+//     overflow-y: auto;
+//     padding: 0;
+
+//     .publication-item {
+//       margin-bottom: 20px;
+//       padding: 15px;
+//       border-bottom: 1px solid #ddd;
+
+//       h6 {
+//         font-size: 1.25rem;
+//       }
+
+//       .authors-list {
+//         display: flex;
+//         flex-wrap: wrap;
+//         margin-top: 10px;
+
+//         .author {
+//           display: flex;
+//           align-items: center;
+//           margin-right: 10px;
+
+//           .MuiAvatar-root {
+//             width: 40px;
+//             height: 40px;
+//             margin-right: 10px;
+//           }
+
+//           span {
+//             font-size: 1rem;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .publications-modal {
+//   .close-btn {
+//     position: absolute;
+//     right: 1rem;
+//     top: 1rem;
+//   }
+
+//   .modal-box {
+//     max-height: 90vh;
+//     overflow-y: auto;
+//     padding: 0;
+//     border-radius: 12px;
+//     animation: modalFadeIn 0.5s ease-out forwards;
+//   }
+
+//   #modal-title {
+//     padding: 1rem;
+//     box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+//     background-color: #f7f7f7;
+//     border-radius: 12px 12px 0 0;
+//   }
+
+//   .publications-list {
+//     max-height: 75vh;
+//     overflow-y: auto;
+//     padding: 20px;
+//     background-color: #f4f6f9;
+//     border-radius: 0 0 12px 12px;
+
+//     .publication-item {
+//       margin-bottom: 20px;
+//       padding: 20px;
+//       border-radius: 12px;
+//       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+//       background-color: #ffffff;
+//       transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+//       opacity: 0; // Initial opacity for animation
+
+//       &:hover {
+//         transform: translateY(-5px);
+//         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+//       }
+
+//       h6 {
+//         font-size: 1.25rem;
+//       }
+
+//       .authors-list {
+//         display: flex;
+//         flex-wrap: wrap;
+//         margin-top: 10px;
+
+//         .author {
+//           display: flex;
+//           align-items: center;
+//           margin-right: 10px;
+
+//           .MuiAvatar-root {
+//             width: 40px;
+//             height: 40px;
+//             margin-right: 10px;
+//           }
+
+//           span {
+//             font-size: 1rem;
+//           }
+//         }
+//       }
+
+//       &.fade-in {
+//         animation: fadeIn 0.8s forwards;
+//       }
+//     }
+//   }
+// }
+
+// @keyframes modalFadeIn {
+//   0% {
+//     transform: scale(0.95) translate(-50%, -50%);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: scale(1) translate(-50%, -50%);
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes fadeIn {
+//   0% {
+//     opacity: 0;
+//     transform: translateY(20px);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+
+// // Delays for each publication item to stagger the animation
+// .fade-in-delay-0 {
+//   animation-delay: 0.2s;
+// }
+// .fade-in-delay-1 {
+//   animation-delay: 0.4s;
+// }
+// .fade-in-delay-2 {
+//   animation-delay: 0.6s;
+// }
+// .fade-in-delay-3 {
+//   animation-delay: 0.8s;
+// }
+// .fade-in-delay-4 {
+//   animation-delay: 1s;
+// }
+
+.publications-modal {
+  .close-btn {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 10;
+  }
+
+  .modal-box {
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 0;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #f7f9fc, #eef1f5);
+    animation: modalZoomIn 0.5s ease-out forwards;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  #modal-title {
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(135deg, #3498db, #f39c12);
+    color: #ffffff;
+    border-radius: 16px 16px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px;
+  }
+
+  .publications-list {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 0 0 16px 16px;
+
+    .publication-item {
+      margin-bottom: 20px;
+      //   padding: 20px;
+      border-radius: 12px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      background: linear-gradient(135deg, #e3f2fd, #ffffff);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      opacity: 0; // Initial opacity for animation
+      transform: translateY(50px);
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+      }
+
+      .publication-card-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        animation: fadeInUp 0.8s forwards;
+      }
+
+      .publication-title {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #3498db;
+        // text-align: center;
+        // margin-bottom: 15px;
+        animation: fadeInUp 1s forwards;
+      }
+
+      .authors-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        align-items: center;
+
+        .author-item {
+          display: flex;
+          align-items: center;
+          margin-right: 10px;
+          opacity: 0; // Initial opacity for staggered animations
+          animation: fadeInLeft 0.8s forwards;
+        }
+
+        .author-avatar {
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+        }
+
+        .author-name {
+          font-size: 0.9rem;
+          color: #34495e;
+        }
+      }
+
+      .publication-type {
+        font-size: 0.8rem;
+        text-align: right;
+        font-weight: bold;
+        color: #f39c12;
+        animation: fadeInUp 1s forwards;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0.2rem 1rem;
+        border-bottom-left-radius: 10px;
+        // background-color: #3498db;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px;
+
+        // background: linear-gradient(135deg, #f7f9fc, #608bc3);
+      }
+
+      &.slide-in {
+        animation: slideInUp 0.8s forwards;
+      }
+    }
+  }
+}
+
+@keyframes modalZoomIn {
+  0% {
+    transform: scale(0.95) translate(-50%, -50%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

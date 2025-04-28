@@ -1,0 +1,312 @@
+// $primary-color: #1e88e5;
+// $secondary-color: #ffffff;
+// $accent-color: #ffb74d;
+// $dark-text-color: #263238;
+// $border-radius: 12px;
+// $box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+// $transition-speed: 0.5s;
+// $background-color: #f4f6f9;
+
+// .professors-page {
+//   //   padding: 0 40px;
+//   background-color: $background-color;
+//   //   height: 100vh;
+//   width: calc(100% - 70px);
+//   padding: 40px;
+//   //   overflow: hidden;
+
+//   .page-title {
+//     // font-size: 42px;
+//     // // text-align: center;
+//     // color: $primary-color;
+//     // margin-bottom: 30px;
+//     font-size: 36px;
+//     font-weight: 700;
+//     // text-align: center;
+//     color: $dark-text-color;
+//     margin-bottom: 30px;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//   }
+
+//   .professor-list {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+//     gap: 20px;
+//   }
+
+//   .professor-card {
+//     position: relative;
+//     background: $secondary-color;
+//     border-radius: $border-radius;
+//     padding: 15px;
+//     text-align: center;
+//     box-shadow: $box-shadow;
+//     cursor: pointer;
+//     opacity: 0;
+//     scale: 1;
+//     transition: all 0.5s ease, transform 1s ease-in-out,
+//       box-shadow $transition-speed;
+//     border: 2px solid transparent;
+//     min-width: 250px;
+//     max-width: 250px;
+//     min-height: 380px;
+//     max-height: 380px;
+//     display: flex;
+//     flex-direction: column;
+
+//     &:hover {
+//       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+//       scale: 1.05;
+//       border: 2px solid $accent-color;
+//       //   background: linear-gradient(135deg, #3498db, #f39c12);
+//       //   transform: scale3d(1.5);
+//     }
+
+//     .professor-image {
+//       width: 100%;
+//       height: 280px;
+//       min-height: 280px;
+//       max-height: 280px;
+//       object-fit: cover;
+//       border-radius: 10px;
+//       margin-bottom: 10px;
+//       flex: 1;
+//     }
+
+//     .professor-info {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       justify-content: center;
+//       padding: 5px 0;
+//       h2 {
+//         font-size: 24px;
+//         color: $primary-color;
+//         margin: 0;
+//         padding: 0;
+//       }
+
+//       p {
+//         font-size: 16px;
+//         color: $dark-text-color;
+//         margin: 5px 0 0 0;
+//       }
+//     }
+
+//     &.animate-0 {
+//       animation: slideInLeft 0.8s forwards;
+//     }
+//     &.animate-1 {
+//       animation: slideInRight 0.8s forwards;
+//     }
+//     &.animate-2 {
+//       animation: slideInUp 0.8s forwards;
+//     }
+//     &.animate-3 {
+//       animation: slideInDown 0.8s forwards;
+//     }
+
+//     &.hidden {
+//       opacity: 0;
+//     }
+//   }
+
+//   @keyframes slideInLeft {
+//     from {
+//       opacity: 0;
+//       transform: translateX(-100%) scale(0.8);
+//     }
+//     to {
+//       opacity: 1;
+//       transform: translateX(0) scale(1);
+//     }
+//   }
+
+//   @keyframes slideInRight {
+//     from {
+//       opacity: 0;
+//       transform: translateX(100%) scale(0.8);
+//     }
+//     to {
+//       opacity: 1;
+//       transform: translateX(0) scale(1);
+//     }
+//   }
+
+//   @keyframes slideInUp {
+//     from {
+//       opacity: 0;
+//       transform: translateY(100%) scale(0.8);
+//     }
+//     to {
+//       opacity: 1;
+//       transform: translateY(0) scale(1);
+//     }
+//   }
+
+//   @keyframes slideInDown {
+//     from {
+//       opacity: 0;
+//       transform: translateY(-100%) scale(0.8);
+//     }
+//     to {
+//       opacity: 1;
+//       transform: translateY(0) scale(1);
+//     }
+//   }
+// }
+
+$primary-color: #1e88e5;
+$secondary-color: #ffffff;
+$accent-color: #ffb74d;
+$dark-text-color: #263238;
+$border-radius: 0.75rem; // Equivalent to 12px
+$box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.1); // Equivalent to 0 4px 20px
+$transition-speed: 0.5s;
+$background-color: #f4f6f9;
+
+.professors-page {
+  background-color: $background-color;
+  width: calc(100% - 4.375rem); // Equivalent to 70px
+  padding: 0 2.5rem; // Equivalent to 40px
+  //   height: 100vh;
+  .page-title {
+    font-size: 2.25rem; // Equivalent to 36px
+    font-weight: 700;
+    color: $dark-text-color;
+    margin-bottom: 1.875rem; // Equivalent to 30px
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .professor-list {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(17.5rem, 1fr)
+    ); // Equivalent to 280px
+    gap: 1.25rem; // Equivalent to 20px
+  }
+
+  .professor-card {
+    position: relative;
+    background: $secondary-color;
+    border-radius: $border-radius;
+    padding: 0.9375rem; // Equivalent to 15px
+    text-align: center;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+    opacity: 0;
+    scale: 1;
+    transition: all 0.5s ease, transform 1s ease-in-out,
+      box-shadow $transition-speed;
+    border: 0.125rem solid transparent; // Equivalent to 2px
+    min-width: 15.625rem; // Equivalent to 250px
+    max-width: 15.625rem; // Equivalent to 250px
+    min-height: 22rem; // Equivalent to 380px
+    max-height: 22rem; // Equivalent to 380px
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      box-shadow: 0 0.5rem 1.875rem rgba(0, 0, 0, 0.2); // Equivalent to 0 8px 30px
+      scale: 1.05;
+      border: 0.125rem solid $accent-color; // Equivalent to 2px
+    }
+
+    .professor-image {
+      width: 100%;
+      height: 17.5rem; // Equivalent to 280px
+      min-height: 17.5rem; // Equivalent to 280px
+      // max-height: 17.5rem; // Equivalent to 280px
+      object-fit: cover;
+      border-radius: 0.625rem; // Equivalent to 10px
+      margin-bottom: 0.625rem; // Equivalent to 10px
+      flex: 1;
+    }
+
+    .professor-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0.3125rem 0; // Equivalent to 5px
+      h2 {
+        font-size: 1.3rem; // Equivalent to 24px
+        color: $primary-color;
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        font-size: 1rem; // Equivalent to 16px
+        color: $dark-text-color;
+        margin: 0.3125rem 0 0 0; // Equivalent to 5px
+      }
+    }
+
+    &.animate-0 {
+      animation: slideInLeft 0.8s forwards;
+    }
+    &.animate-1 {
+      animation: slideInRight 0.8s forwards;
+    }
+    &.animate-2 {
+      animation: slideInUp 0.8s forwards;
+    }
+    &.animate-3 {
+      animation: slideInDown 0.8s forwards;
+    }
+
+    &.hidden {
+      opacity: 0;
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%) scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%) scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+  }
+
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%) scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes slideInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-100%) scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+}

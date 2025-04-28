@@ -1,0 +1,114 @@
+$primary-color: #3498db;
+$secondary-color: #2c3e50;
+$background-color: #f7f9fc;
+$accent-color: #ffb74d;
+$error-color: #e74c3c;
+
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f1f5f8, #e1eaf1);
+  width: 100%;
+
+  &__input {
+    margin-bottom: 20px;
+  }
+
+  &__submit {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+
+  .MuiFormHelperText-root {
+    color: $error-color;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 600px;
+    background-color: $background-color;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+
+    .contact-page__title {
+      font-size: 2rem;
+      color: $primary-color;
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+
+    &__input {
+      margin-bottom: 20px;
+      label {
+        font-size: 1rem;
+        color: $secondary-color;
+      }
+    }
+
+    &__submit {
+      background-color: $primary-color;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+
+    .MuiFormHelperText-root {
+      color: $error-color;
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// .contact-form {
+//   &__input {
+//     margin-bottom: 20px;
+//   }
+
+//   &__submit {
+//     background-color: $primary-color;
+//     color: #fff;
+//     padding: 12px 20px;
+//     border-radius: 8px;
+//     transition: background-color 0.3s ease;
+
+//     &:hover {
+//       background-color: darken($primary-color, 10%);
+//     }
+//   }
+
+//   .MuiFormHelperText-root {
+//     color: $error-color;
+//   }
+// }
