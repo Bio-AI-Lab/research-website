@@ -1,5 +1,5 @@
 {
-  "name": "nsf-research-website",
+  "name": "research-website",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://bio-ai-lab.github.io/research-website",
@@ -47,6 +47,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.3.0"
   }
 }
