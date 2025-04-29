@@ -2,7 +2,7 @@
   "name": "nsf-research-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kushal-1234.github.io/nsf-research-website",
+  "homepage": "https://bio-ai-lab.github.io/research-website",
   "dependencies": {
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
