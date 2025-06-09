@@ -63,7 +63,7 @@ import React, { useEffect } from "react";
 import "./NewsPage.scss";
 
 const news = [
-  `Our paper titled "Genomic Privacy and Security in the Era of Artificial Intelligence and Quantum Computing" was accepted by Discover Computing, 2025.`,
+  `Our paper titled "Genomic Privacy and Security in the Era of Artificial Intelligence and Quantum Computing" was published by Discover Computing, 2025.`,
   `Our paper titled "Artificial Intelligence in COVID-19 Research: A Comprehensive Survey of Innovations, Challenges, and Future Directions" was published by Computer Science Review, 2025.`,
   `Our paper titled "Explainable Convolutional Neural Network for COVID-19 Detection", has been accepted by the 2025 International Conference on Bioinformatics and Computational Biology (BICOB 2025).`,
   `Our paper titled "Violence Detection from Industrial Surveillance Videos Using Deep Learning" was published at IEEE Access, 2025.`,
