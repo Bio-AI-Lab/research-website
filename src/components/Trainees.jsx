@@ -132,7 +132,7 @@ const traineesData = {
     },
     {
       name: "Xiaoyin Wanyan (Master)",
-      image: xiaoyin,
+      image: Xiaoyin,
     },
     {
       name: "Bader Alwomi Aljabali",
