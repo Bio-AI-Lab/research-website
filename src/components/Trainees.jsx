@@ -7,6 +7,8 @@ import kushalB from "../assets/images/kushalB.jpg";
 import kushal from "../assets/images/kalyan.jpg";
 import sam from "../assets/images/sam.jpeg";
 import alexis from "../assets/images/alexis.jpg";
+import Xiaoyin from "../assets/images/Xiaoyin.jpg";
+
 
 const traineesData = {
   undergraduate: [
@@ -130,7 +132,7 @@ const traineesData = {
     },
     {
       name: "Xiaoyin Wanyan (Master)",
-      image: defaultProfileImage,
+      image: Xiaoyin,
     },
     {
       name: "Bader Alwomi Aljabali",
