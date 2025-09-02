@@ -121,12 +121,16 @@ const traineesData = {
       image: kushalB,
     },
     {
-      name: "Maxwell Sam (Master)",
+      name: "Maxwell Sam (PhD)",
       image: sam,
     },
     {
       name: "Alexis Cathcart (Master)",
       image: alexis,
+    },
+    {
+      name: "Xiaoyin Wanyan (Master)",
+      image: defaultProfileImage,
     },
     {
       name: "Bader Alwomi Aljabali",

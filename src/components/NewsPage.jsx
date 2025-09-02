@@ -63,6 +63,7 @@ import React, { useEffect } from "react";
 import "./NewsPage.scss";
 
 const news = [
+  `Our paper titled "C2BM: Causal Concept Disentanglement for Fair Multimodal COVID-19 Detection" was accepted by the Secure, Uncertainty-aware, Robust, and Explainable AI for Health (Secure AI4H) Symposium at the AAAI 2025 Fall Symposium Series (FSS-25).`,
   `Our paper titled "Addressing COVID-19 Data Imbalance Issue with Multimodal Image Generation" was accepted by the 16th ACM Conference on Bioinformatics, Computational Biology and Health Informatics, ACM BCB, 2025.`,
   `Our paper titled "Genomic Privacy and Security in the Era of Artificial Intelligence and Quantum Computing" was published by Discover Computing, 2025.`,
   `Our paper titled "Artificial Intelligence in COVID-19 Research: A Comprehensive Survey of Innovations, Challenges, and Future Directions" was published by Computer Science Review, 2025.`,
