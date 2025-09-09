@@ -131,8 +131,12 @@ const traineesData = {
       image: alexis,
     },
     {
-      name: "Xiaoyin Wanyan (Master)",
+      name: "Xiaoyin Wanyan (Master)", 
       image: Xiaoyin,
+    },
+    {
+      name: "Jordanne Davenport",
+      image: defaultProfileImage,
     },
     {
       name: "Bader Alwomi Aljabali",
