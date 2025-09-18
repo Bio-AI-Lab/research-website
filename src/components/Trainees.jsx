@@ -135,6 +135,10 @@ const traineesData = {
       image: Xiaoyin,
     },
     {
+      name: "Taylor Gray (PhD)",
+      image: defaultProfileImage,
+    },
+    {
       name: "Jordanne Davenport",
       image: defaultProfileImage,
     },
