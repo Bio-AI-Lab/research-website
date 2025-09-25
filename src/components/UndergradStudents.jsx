@@ -127,7 +127,7 @@ const UndergradStudents = ({ teams }) => {
 
   return (
     <div className="students-page">
-      <h1 className="page-title">URM Projects</h1>
+      <h1 className="page-title">Undergraduate Student AI workshop</h1>
       <div className="team-list">
         {teams.map((team, index) => (
           <div
