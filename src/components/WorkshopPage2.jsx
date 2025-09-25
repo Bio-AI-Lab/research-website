@@ -234,7 +234,7 @@ const WorkshopPage2 = () => {
           variant="h4"
           style={{ marginBottom: "0.5rem", fontWeight: 500, fontSize: "36px" }}
         >
-          URM Projects Final Presentation Workshop 2
+          Undergraduate Student AI workshop
         </Typography>
         <div
           style={{
