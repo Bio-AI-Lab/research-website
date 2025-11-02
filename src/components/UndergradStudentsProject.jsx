@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./UndergradStudents.scss";
+import "./UndergradStudentsProject.scss";
 
-const UndergradStudents = () => {
+const UndergradStudentsProject = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -78,4 +78,4 @@ const UndergradStudents = () => {
   );
 };
 
-export default UndergradStudents;
+export default UndergradStudentsProject;

@@ -37,6 +37,7 @@ import WorkshopPage2 from "./components/WorkshopPage2";
 import Trainees from "./components/Trainees";
 import Login from "./components/Login";
 import credList from "./assets/Users/Credentials.json";
+import UndergradStudentsProject from "./components/UndergradStudentsProject";
 
 const professorsData = [
   {
@@ -1521,6 +1522,7 @@ function App() {
               {/* <Route path="/members" element={<Members />} /> */}
               <Route path="/meetings" element={<Meetings />} />
               <Route path="/tools" element={<Tools />} />
+              <Route path="/undergradstudentproject" element={<UndergradStudentsProject />} />
               {/* <Route path="/workshop" element={<Workshop />} /> */}
               <Route path="/workshop" element={<WorkshopPage />} />
               <Route path="/workshop2" element={<WorkshopPage2 />} />
