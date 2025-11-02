@@ -25,7 +25,7 @@ const UndergradStudentsProject = () => {
     {
       id: 2,
       projectName: "VR game that simulates the real-life effects of alcohol",
-      facultyAdvisor: [" "],
+      facultyAdvisor: [""],
       teamMembers: [
         "Justin Nguyen",
         "Melvin Marin Avelino",
@@ -37,13 +37,13 @@ const UndergradStudentsProject = () => {
     {
       id: 3,
       projectName: "THE RIGHT BEAT",
-      facultyAdvisor: [" "],
+      facultyAdvisor: [""],
       teamMembers: ["Nandi Hawkins", "Jaidan Sullivan", "Jonathan Little"],
     },
     {
       id: 4,
       projectName: "MY CNN",
-      facultyAdvisor: [" "],
+      facultyAdvisor: [""],
       teamMembers: [
         "Bryce Dinkins",
         "Sequoia Quinn",
@@ -54,7 +54,7 @@ const UndergradStudentsProject = () => {
     {
       id: 5,
       projectName: "EXPLAINABLE AI FOR PHENOTYPE PREDICTION",
-      facultyAdvisor: [" "],
+      facultyAdvisor: [""],
       teamMembers: ["Kori Jackson", "Micah Hill", "Jalen Angus", "Cameron Tatum"],
     },
   ];
