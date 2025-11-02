@@ -9,8 +9,8 @@ $transition-speed: 0.4s;
 $background-color: #f1f8e9;
 
 .students-page {
-  width: calc(100% - 4.375rem); // Equivalent to 70px
-  padding: 0 2.5rem; // Equivalent to 40px
+  width: calc(100% - 4.375rem);
+  padding: 0 2.5rem;
 
   .page-title {
     font-size: 36px;
@@ -39,7 +39,8 @@ $background-color: #f1f8e9;
     transform: scale(0.95);
     border: 1px solid transparent;
     min-width: 280px;
-    max-width: 280px;
+    max-width: 400px;
+    width: 100%;
 
     &:hover {
       transform: scale(1.02);
@@ -49,49 +50,44 @@ $background-color: #f1f8e9;
 
     .team-info {
       .faculty-section {
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
 
-        .faculty-item {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          padding: 1rem;
+        h3 {
+          font-size: 1.25rem;
+          color: $primary-color;
+          margin-bottom: 0.75rem;
+        }
 
-          .faculty-image {
-            width: 200px; // Fixed width
-            height: 200px; // Fixed height
-            border-radius: 50%; // Circular shape
-            object-fit: cover; // Maintain aspect ratio and cover the container
-            display: block; // Block-level element for proper margin handling
-            margin: 0 auto 0.625rem; // Center horizontally and add bottom margin
-            border: 2px solid $accent-color; // Optional: Adds a border
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // Optional: Adds a shadow
-          }
+        .faculty-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
 
-          span {
-            font-size: 0.9rem;
-            color: $light-text-color;
+          .faculty-name {
+            font-size: 1rem;
+            color: $text-color;
+            padding: 0.25rem 0;
+            margin: 0.25rem 0;
+            font-weight: 500;
           }
         }
       }
 
       h2 {
-        font-size: 1.5rem; // Equivalent to 24px
+        font-size: 1.5rem;
         color: $primary-color;
         margin-bottom: 10px;
         font-weight: 600;
       }
 
       p {
-        font-size: 1rem; // Equivalent to 16px
+        font-size: 1rem;
         color: $text-color;
         margin: 0.5rem 0;
       }
 
       h3 {
-        font-size: 1.25rem; // Equivalent to 20px
+        font-size: 1.25rem;
         color: $primary-color;
         margin: 1.5rem 0 0.75rem;
       }
@@ -103,24 +99,22 @@ $background-color: #f1f8e9;
         .student-item {
           display: flex;
           align-items: center;
-          margin-bottom: 1rem;
+          margin-bottom: 0.75rem;
 
           .student-profile {
             display: flex;
             align-items: center;
-          }
-
-          .student-image {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-right: 10px;
-            object-fit: cover;
+            width: 100%;
           }
 
           .student-details {
-            font-size: 1rem; // Equivalent to 16px
-            color: $light-text-color;
+            font-size: 1rem;
+            color: $text-color;
+            font-weight: 400;
+
+            span {
+              display: block;
+            }
           }
         }
       }

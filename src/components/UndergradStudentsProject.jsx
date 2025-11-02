@@ -5,8 +5,10 @@ const UndergradStudentsProject = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
+    console.log("Component mounted");
     setTimeout(() => {
       setIsLoaded(true);
+      console.log("Animation loaded");
     }, 100);
   }, []);
 
@@ -59,50 +61,56 @@ const UndergradStudentsProject = () => {
     },
   ];
 
+  console.log("Projects:", projects);
+  console.log("IsLoaded:", isLoaded);
+
   return (
     <div className="students-page">
       <h1 className="page-title">Undergraduate Student Projects</h1>
       <div className="team-list">
-        {projects.map((project, index) => (
-          <div
-            key={project.id}
-            className={`team-card ${
-              isLoaded ? `animate-${index % 4}` : "hidden"
-            }`}
-          >
-            <div className="team-info">
-              <h2>{project.projectName}</h2>
+        {projects.map((project, index) => {
+          console.log("Rendering project:", project.projectName);
+          return (
+            <div
+              key={project.id}
+              className={`team-card ${
+                isLoaded ? `animate-${index % 4}` : "hidden"
+              }`}
+            >
+              <div className="team-info">
+                <h2>{project.projectName}</h2>
 
-              {project.facultyAdvisor &&
-                project.facultyAdvisor.length > 0 &&
-                project.facultyAdvisor[0].trim() !== "" && (
-                  <div className="faculty-section">
-                    <h3>Faculty Advisor:</h3>
-                    <ul className="faculty-list">
-                      {project.facultyAdvisor.map((advisor, i) => (
-                        <li key={i} className="faculty-name">
-                          {advisor}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-
-              <h3>Team Members:</h3>
-              <ul className="student-list">
-                {project.teamMembers.map((member, i) => (
-                  <li key={i} className="student-item">
-                    <div className="student-profile">
-                      <div className="student-details">
-                        <span>{member}</span>
-                      </div>
+                {project.facultyAdvisor &&
+                  project.facultyAdvisor.length > 0 &&
+                  project.facultyAdvisor[0].trim() !== "" && (
+                    <div className="faculty-section">
+                      <h3>Faculty Advisor:</h3>
+                      <ul className="faculty-list">
+                        {project.facultyAdvisor.map((advisor, i) => (
+                          <li key={i} className="faculty-name">
+                            {advisor}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                  </li>
-                ))}
-              </ul>
+                  )}
+
+                <h3>Team Members:</h3>
+                <ul className="student-list">
+                  {project.teamMembers.map((member, i) => (
+                    <li key={i} className="student-item">
+                      <div className="student-profile">
+                        <div className="student-details">
+                          <span>{member}</span>
+                        </div>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
