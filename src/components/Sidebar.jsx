@@ -64,6 +64,15 @@ const Sidebar = ({ isOpen, toggleSidebar, handleLogout }) => {
           </li>
           <li>
             <Link
+              to="/undergrad-projects"
+              className={isActive("/undergrad-projects") ? "active" : ""}
+            >
+              <GroupsIcon className="icon" />
+              {isOpen && <span>Undergraduate Projects</span>}
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/undergrad-students"
               className={isActive("/undergrad-students") ? "active" : ""}
             >
