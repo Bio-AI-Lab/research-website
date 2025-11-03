@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/research-website/static/css/main.881c68bf.css",
-    "main.js": "/research-website/static/js/main.a8688194.js",
+    "main.css": "/research-website/static/css/main.43f34b9a.css",
+    "main.js": "/research-website/static/js/main.5657e4a4.js",
     "static/js/453.f68eb1b0.chunk.js": "/research-website/static/js/453.f68eb1b0.chunk.js",
     "static/media/xiaoyin.png": "/research-website/static/media/xiaoyin.ab3d29fe525148fea073.png",
     "static/media/bg1.jpg": "/research-website/static/media/bg1.7aa91e04e9167d9ddb1f.jpg",
@@ -59,12 +59,12 @@
     "static/media/PIImage3.png": "/research-website/static/media/PIImage3.c735e5bf767e1d75c78f.png",
     "static/media/Bg1.png": "/research-website/static/media/Bg1.f68721a8054b9044ac81.png",
     "index.html": "/research-website/index.html",
-    "main.881c68bf.css.map": "/research-website/static/css/main.881c68bf.css.map",
-    "main.a8688194.js.map": "/research-website/static/js/main.a8688194.js.map",
+    "main.43f34b9a.css.map": "/research-website/static/css/main.43f34b9a.css.map",
+    "main.5657e4a4.js.map": "/research-website/static/js/main.5657e4a4.js.map",
     "453.f68eb1b0.chunk.js.map": "/research-website/static/js/453.f68eb1b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.881c68bf.css",
-    "static/js/main.a8688194.js"
+    "static/css/main.43f34b9a.css",
+    "static/js/main.5657e4a4.js"
   ]
 }
