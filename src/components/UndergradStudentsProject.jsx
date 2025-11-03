@@ -16,7 +16,7 @@ const UndergradStudentsProject = () => {
     {
       id: 1,
       projectName: "AGGIEREVIEW",
-      facultyAdvisor: ["Dr. Mahmoud Abdelsalam"],
+      facultyAdvisor: [""],
       teamMembers: [
         "Abdoul Zeba",
         "Abdullah Zubair",
