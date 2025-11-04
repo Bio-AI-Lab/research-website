@@ -59,6 +59,12 @@ const UndergradStudentsProject = () => {
       facultyAdvisor: [""],
       teamMembers: ["Kori Jackson", "Micah Hill", "Jalen Angus", "Cameron Tatum"],
     },
+    {
+      id: 6,
+      projectName: "NANNYBOT",
+      facultyAdvisor: [""],
+      teamMembers: ["Aryaunna Armstrong", "A'reya Davis", "Kaciopey Ikounga"],
+    },
   ];
 
   console.log("Projects:", projects);
