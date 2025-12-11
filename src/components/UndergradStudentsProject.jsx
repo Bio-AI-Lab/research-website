@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./UndergradStudentsProject.scss";
+import { GitHub } from "@mui/icons-material";
 
 const UndergradStudentsProject = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -23,6 +24,7 @@ const UndergradStudentsProject = () => {
         "Jason Momanyi",
         "Robert Reid",
       ],
+      GitHub: "",
     },
     {
       id: 2,
@@ -35,12 +37,14 @@ const UndergradStudentsProject = () => {
         "Kristopher Poston",
         "Cameron Allen",
       ],
+      GitHub: "https://github.com/jalenangus/SeniorProject",
     },
     {
       id: 3,
       projectName: "THE RIGHT BEAT",
       facultyAdvisor: [""],
       teamMembers: ["Nandi Hawkins", "Jaidan Sullivan", "Jonathan Little"],
+      GitHub: "https://github.com/nanhawku/COMP496_Group1Code",
     },
     {
       id: 4,
@@ -52,18 +56,21 @@ const UndergradStudentsProject = () => {
         "Sanai McClary",
         "Kelvin Rattley",
       ],
+      GitHub: "",
     },
     {
       id: 5,
       projectName: "EXPLAINABLE AI FOR PHENOTYPE PREDICTION",
       facultyAdvisor: [""],
       teamMembers: ["Kori Jackson", "Micah Hill", "Jalen Angus", "Cameron Tatum"],
+      GitHub: "",
     },
     {
       id: 6,
       projectName: "NANNYBOT",
       facultyAdvisor: [""],
       teamMembers: ["Aryaunna Armstrong", "A'reya Davis", "Kaciopey Ikounga"],
+      GitHub: "https://github.com/Atarmstrong1/Nannybot",
     },
   ];
 
