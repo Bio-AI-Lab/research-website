@@ -63,7 +63,7 @@ const UndergradStudentsProject = () => {
       projectName: "EXPLAINABLE AI FOR PHENOTYPE PREDICTION",
       facultyAdvisor: [""],
       teamMembers: ["Kori Jackson", "Micah Hill", "Jalen Angus", "Cameron Tatum"],
-      GitHub: "",
+      github: "",
     },
     {
       id: 6,
