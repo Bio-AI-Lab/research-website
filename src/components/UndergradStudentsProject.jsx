@@ -120,15 +120,15 @@ const UndergradStudentsProject = () => {
                     </li>
                   ))}
                 </ul>
-                <h4>GitHub:</h4>
-                {project.GitHub && project.GitHub.trim() !== "" && (
+                {project.github && project.github.trim() !== "" && (
                 <a
                   className="github-link"
-                  href={project.GitHub}
+                  href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <GitHub className="github-icon" />
+                  <span>GitHub Repository</span>
                 </a>
               )}
               </div>
