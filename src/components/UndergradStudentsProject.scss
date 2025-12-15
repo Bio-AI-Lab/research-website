@@ -118,6 +118,36 @@ $background-color: #f1f8e9;
           }
         }
       }
+      .github-section {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid #e0e0e0;
+
+        .github-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          color: $text-color;
+          text-decoration: none;
+          padding: 0.75rem 1.25rem;
+          border: 2px solid $primary-color;
+          border-radius: 8px;
+          transition: all $transition-speed ease;
+          font-weight: 500;
+          background-color: transparent;
+
+          &:hover {
+            background-color: $primary-color;
+            color: $secondary-color;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 121, 107, 0.3);
+          }
+
+          svg {
+            font-size: 1.2rem;
+          }
+        }
+      }
     }
 
     &.animate-0 {
