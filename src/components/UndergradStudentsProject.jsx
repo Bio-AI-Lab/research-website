@@ -24,7 +24,7 @@ const UndergradStudentsProject = () => {
         "Jason Momanyi",
         "Robert Reid",
       ],
-      GitHub: "",
+      github: "",
     },
     {
       id: 2,
@@ -37,14 +37,14 @@ const UndergradStudentsProject = () => {
         "Kristopher Poston",
         "Cameron Allen",
       ],
-      GitHub: "https://github.com/jalenangus/SeniorProject",
+      github: "https://github.com/jalenangus/SeniorProject",
     },
     {
       id: 3,
       projectName: "THE RIGHT BEAT",
       facultyAdvisor: [""],
       teamMembers: ["Nandi Hawkins", "Jaidan Sullivan", "Jonathan Little"],
-      GitHub: "https://github.com/nanhawku/COMP496_Group1Code",
+      github: "https://github.com/nanhawku/COMP496_Group1Code",
     },
     {
       id: 4,
@@ -56,7 +56,7 @@ const UndergradStudentsProject = () => {
         "Sanai McClary",
         "Kelvin Rattley",
       ],
-      GitHub: "",
+      github: "",
     },
     {
       id: 5,
@@ -70,7 +70,7 @@ const UndergradStudentsProject = () => {
       projectName: "NANNYBOT",
       facultyAdvisor: [""],
       teamMembers: ["Aryaunna Armstrong", "A'reya Davis", "Kaciopey Ikounga"],
-      GitHub: "https://github.com/Atarmstrong1/Nannybot",
+      github: "https://github.com/Atarmstrong1/Nannybot",
     },
   ];
 
@@ -120,6 +120,7 @@ const UndergradStudentsProject = () => {
                     </li>
                   ))}
                 </ul>
+                <h4>GitHub:</h4>
                 {project.GitHub && project.GitHub.trim() !== "" && (
                 <a
                   className="github-link"
