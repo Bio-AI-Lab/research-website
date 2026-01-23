@@ -135,6 +135,14 @@ const traineesData = {
       image: Xiaoyin,
     },
     {
+      name: "Olukayode Fatoki (PhD)", 
+      image: Xiaoyin,
+    },
+    {
+      name: "Sanjaya Ghimire (PhD)", 
+      image: Xiaoyin,
+    },
+    {
       name: "Taylor Gray (PhD)",
       image: defaultProfileImage,
     },
